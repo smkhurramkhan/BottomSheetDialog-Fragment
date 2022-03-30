@@ -1,0 +1,2 @@
+# BottomSheetDialog-Fragment
+Bottom Sheet dialogs seem to be replacing regular Android dialogs and menus. The Bottom Sheet is a component that slides up from the bottom of the screen to showcase additional content in your application.  A Bottom Sheet dialog is like a message box triggered by the user’s actions. Companies such as Google, Facebook, and Twitter have implemented this feature in their applications.
