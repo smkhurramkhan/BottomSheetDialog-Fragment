@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+
+        <ImageView
+            android:id="@+id/workout_video_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trending_videos_img_placeholder" />
+
+
+        <ImageView
+            android:id="@+id/workout_video_play_button_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/workout_video_image"
+            app:layout_constraintEnd_toEndOf="@id/workout_video_image"
+            app:layout_constraintStart_toStartOf="@id/workout_video_image"
+            app:layout_constraintTop_toTopOf="@id/workout_video_image" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomLayer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/workout_video_image">
+
+            <TextView
+                android:id="@+id/workout_video_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#fff"
+                android:maxLines="1"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@id/workout_video_duration_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/workout_video_duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="5 min"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:drawableLeftCompat="@drawable/video_duration_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/workout_video_label" />
+
+
+            <TextView
+                android:id="@+id/trending_video_total_views_slider_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:drawablePadding="6dp"
+                android:text="25.3K"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:drawableLeftCompat="@drawable/views_icons"
+                app:layout_constraintBottom_toBottomOf="@+id/workout_video_duration_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/workout_video_duration_tv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

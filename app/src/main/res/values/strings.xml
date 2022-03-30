@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BottomSheetDialogFragment</string>
+    <string name="favourite_exercises">Favourite Exercises</string>
+</resources>
